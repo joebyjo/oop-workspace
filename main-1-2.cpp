@@ -1,11 +1,5 @@
-#include<iostream>
-
-extern int array_mean(int array[], int n);
+#include <iostream>
 
 int main() {
-
-    
-
-    
     return 0;
 }

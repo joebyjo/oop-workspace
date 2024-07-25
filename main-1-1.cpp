@@ -1,11 +1,5 @@
-#include<iostream>
-
-extern int array_sum(int array[], int n);
+#include <iostream>
 
 int main() {
-
-    
-
-    
     return 0;
 }
