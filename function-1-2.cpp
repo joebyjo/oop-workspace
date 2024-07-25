@@ -16,6 +16,6 @@ double array_mean(int array[], int n) {
         total += array[i];
     }
 
-    return double(total/n);
+    return (double) total/n;
 
 }
