@@ -4,7 +4,7 @@ double array_mean(int array[], int n) {
 
     if (n <1) {
         // return zero if array is empty
-        return 0;
+        return 0.0;
     }
 
     int total = 0;
