@@ -1,5 +1,7 @@
 #include <iostream>
 
+extern void print_pass_fail(char grade);
+
 int main() {
-    return 0;
+    print_pass_fail('A');
 }
