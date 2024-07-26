@@ -7,11 +7,11 @@ double weighted_average(int array[], int n) {
         return 0;
     }
 
-    int weighted_avg = 0;
+    double weighted_avg = 0.0;
 
     for (int i=0; i<n; i++) {
 
-        int count = 0;
+        double count = 0;
 
         for (int j=0; j<n; j++) {
 
@@ -21,7 +21,7 @@ double weighted_average(int array[], int n) {
 
         }
 
-        weighted_avg += (array[i] * count/n);
+        weighted_avg +=  (double) (array[i] * count/n);
     }
 
 

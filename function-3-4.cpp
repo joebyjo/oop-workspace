@@ -13,7 +13,7 @@ void print_pass_fail(char grade) {
             cout << "Pass" << std::endl;
             break;
         case 'D':
-            cout << "Pass" << std::endl;
+            cout << "Fail" << std::endl;
             break;
         case 'E':
             cout << "Fail" << std::endl;
