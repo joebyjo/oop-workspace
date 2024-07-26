@@ -3,7 +3,7 @@ using namespace std;
 
 double sum_even(double array[], int n) {
 
-    if (n <1 || n%2==0) {
+    if (n <1) {
         return 0;
     }
 
