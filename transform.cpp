@@ -3,16 +3,18 @@
 
 using namespace std;
 
-string transform(int num, int base) {
+int main() {
+    int num =120, base = 2;
 
-    string digits = "0123456789ABCDEF";
+    string digits = "0123456789ABCDE";
     string result = "";
 
-    while (num > 0) {
-        int remainder = num % base; 
+    while (num > 0) { 
+        int remainder = num % base;
         result = digits[remainder] + result; 
         num = num / base;
     }
 
-    return result;
+    cout << result << endl;
+    return 0;
 }
