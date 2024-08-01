@@ -7,7 +7,7 @@ using namespace std;
 
 int main(void) {
 
-    int array[4][4] = {{1,2,3,4},{1,2,3,4},{1,2,3,4},{1,2,3,5}};
+    int array[4][4] = {{1,0,0,0},{0,1,0,0},{0,0,1,0},{0,0,0,1}};
 
     int sum = sum_diagonal(array);
 
