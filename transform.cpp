@@ -4,9 +4,9 @@
 using namespace std;
 
 int main() {
-    int num =120, base = 2;
+    int num =75, base = 16;
 
-    string digits = "0123456789ABCDE";
+    string digits = "0123456789ABCDEF";
     string result = "";
 
     while (num > 0) { 
