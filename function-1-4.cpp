@@ -13,7 +13,7 @@ void print_scaled(int array[3][3],int scale){
 
             std:: cout << array[k][l] << " ";
 
-            if (k == 3){
+            if (l == 3){
                 std:: cout << std:: endl;
             }
         }
