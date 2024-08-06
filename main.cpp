@@ -1,0 +1,33 @@
+#include <iostream>
+#include "workshop.h"
+
+
+using namespace std;
+
+
+
+int main() {
+
+
+    double x = 1.23;
+    char y = 'a';
+
+    double *x_pointer = &x;
+    char *y_pointer = &y;
+
+    cout << *x_pointer << endl << *y_pointer << endl;
+
+    changeValue(x_pointer);
+
+    cout << *x_pointer << endl;
+
+
+    double array[] = {1,2,3};
+
+    printArray(array, 3);
+
+
+
+
+    return 0;
+}
