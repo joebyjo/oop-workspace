@@ -23,11 +23,19 @@ void printNumbers(int* array, int n) {
 
 }
 
+
+
 int secondSmallestSum(int *numbers,int length) {
 
-    int smallest = numbers[0];
+    int count = 0;
 
-    int second_smallest = numbers[0];
+    for (int i=0;i<length; i++){
+        count += i;
+    }
+
+    int* sum_array = new int[count];
+
+    int index=0;
 
     for (int k=0; k<length; k++)
 
@@ -38,17 +46,15 @@ int secondSmallestSum(int *numbers,int length) {
             for (int j=k; j<=i; j++) {
                 sum1 += numbers[j];
             }
-            cout << sum1 << endl;
-            
-            if (sum1< smallest) {
-                second_smallest = smallest;
-                smallest = sum1;
-            } else if (sum1 > smallest && sum1 < second_smallest) {
-                second_smallest = sum1;
-            }
-
+            sum_array[index] = sum1;
+            index++;
 
         }
+
+
+    sort(sum_array ,sum_array +count);
+
+    int second_smallest = sum_array[1];
 
     return second_smallest;
 
