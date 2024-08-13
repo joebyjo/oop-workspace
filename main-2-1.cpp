@@ -11,7 +11,7 @@ int main() {
 
     hexDigits(array,10);
 
-
+    delete [] array;
     return 0;
 
 }
