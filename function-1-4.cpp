@@ -26,6 +26,6 @@ PersonList shallowCopyPersonList(PersonList pl) {
 
     copy.people = pl.people;
 
-    return copy;
+    return pl;
 
 }
