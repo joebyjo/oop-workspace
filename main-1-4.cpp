@@ -4,7 +4,7 @@
 using namespace std;
 
 extern PersonList createPersonList(int n);
-extern PersonList deepCopyPersonList(PersonList pl);
+extern PersonList shallowCopyPersonList(PersonList pl);
 
 int main() {
 
@@ -12,7 +12,7 @@ int main() {
 
     PersonList array= createPersonList(n);
 
-    PersonList array2= deepCopyPersonList(array);
+    PersonList array2= shallowCopyPersonList(array);
 
     for (int i=0; i<array2.numPeople; i++) {
         cout << array2.people[i].name << "   " << array2.people[i].age << endl;

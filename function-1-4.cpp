@@ -18,20 +18,13 @@ PersonList createPersonList(int n) {
     return people;
 }
 
-PersonList deepCopyPersonList(PersonList pl) {
+PersonList shallowCopyPersonList(PersonList pl) {
 
     PersonList copy;
 
     copy.numPeople = pl.numPeople;
 
-    Person* array = new Person[pl.numPeople];
-
-    for (int i=0; i<copy.numPeople; i++) {
-        array[i].name = pl.people[i].name;
-        array[i].age = pl.people[i].age;
-    }
-
-    copy.people = array;
+    copy.people = pl.people;
 
     return copy;
 
