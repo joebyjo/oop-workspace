@@ -1,9 +1,10 @@
 #ifndef PERSON_H
 #define PERSON_H
 
+using namespace std;
 
 struct Person {
-    std::string name;
+    string name;
     int age;
 };
 
