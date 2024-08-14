@@ -20,12 +20,10 @@ PersonList createPersonList(int n) {
 
 PersonList shallowCopyPersonList(PersonList pl) {
 
-    PersonList copy;
+    PersonList* copy;
 
-    copy.numPeople = pl.numPeople;
+    copy = &pl;
 
-    copy.people = pl.people;
-
-    return pl;
+    return *copy;
 
 }
