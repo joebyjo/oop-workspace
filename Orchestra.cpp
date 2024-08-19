@@ -36,7 +36,7 @@ Musician* Orchestra::get_members() {
 
 bool Orchestra::add_musician(Musician new_musician) {
 
-    if (~(this->current_size==this->size)) {
+    if (this->current_size!=this->size) {
         this->array[this->current_size] = new_musician;
         this->current_size++;
         return true;

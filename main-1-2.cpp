@@ -16,10 +16,7 @@ int main() {
 
     // add musicians to the orchestra
     if (orchestra.add_musician(m1)) {
-        std::cout << "Added musician 1 to the orchestra" << std::endl;
-        // Musician* test = orchestra.get_members();
-        // std::cout << test[0].get_instrument() << std::endl; 
-        
+        std::cout << "Added musician 1 to the orchestra" << std::endl;    
     } else {
         std::cout << "Could not add musician 1 to the orchestra" << std::endl;
     }
