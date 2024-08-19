@@ -1,13 +1,19 @@
 #include "Orchestra.h"
 #include "Musician.h"
+#include <iostream>
+using namespace std;
+
 
 Orchestra:: Orchestra() {
     this->size=0;
+    this->current_size=0;
+    this->array=nullptr;
 }
 
 Orchestra:: Orchestra(int size) {
     this->size=size;
-    Musician* array = new Musician[size];
+    this->current_size=0;
+    array = new Musician[size];
 }
 
 int Orchestra::get_current_number_of_members() {
@@ -32,7 +38,7 @@ bool Orchestra::add_musician(Musician new_musician) {
 
     if (~(this->current_size==this->size)) {
         this->array[this->current_size] = new_musician;
-
+        this->current_size++;
         return true;
     }
 

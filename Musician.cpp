@@ -6,8 +6,9 @@ Musician::Musician() {
 }
 
 Musician::Musician(std::string instrument, int experience) {
-    this->experience=experience;
     this->instrument=instrument;
+    this->experience=experience;
+    
 }
 
 std::string Musician::get_instrument() {
