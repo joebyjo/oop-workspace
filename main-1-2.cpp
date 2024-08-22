@@ -8,7 +8,7 @@ using namespace std;
 int main() {
 
     StoreShelf shop1(300);
-    cout << "Width of Shelf: " << shop1.get_width() << endl;
+    cout << "Current Width of Shelf: " << shop1.get_width() << endl;
 
     MusicBox m1("ABC", 100);
     MusicBox m2("DEF", 100);

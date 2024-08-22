@@ -15,11 +15,11 @@ StoreShelf:: StoreShelf(int width){
 };
 
 int StoreShelf::get_num_music_boxes(){
-    return this->current_num+1;
+    return this->current_num;
 };
 
 int StoreShelf::get_width(){
-    return this->max_width;
+    return this->current_width;
 };
 
 MusicBox* StoreShelf:: get_contents(){
