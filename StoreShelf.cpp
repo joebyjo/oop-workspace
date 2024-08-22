@@ -19,7 +19,7 @@ int StoreShelf::get_num_music_boxes(){
 };
 
 int StoreShelf::get_width(){
-    return this->current_width;
+    return this->max_width;
 };
 
 MusicBox* StoreShelf:: get_contents(){
