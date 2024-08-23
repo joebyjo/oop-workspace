@@ -1,9 +1,0 @@
-1. to help log what changes the commit is commiting, it helps developers revisit each commit and what changes it made
-
-2. a good commit message would describe all changes including the creation and deletion of code
-
-
-3. you should be committing your work everytime a chunk of work is done.
-
-4. False
-
