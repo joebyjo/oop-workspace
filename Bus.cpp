@@ -6,5 +6,5 @@ Bus:: Bus(int ID) {
 }
 
 int Bus:: getParkingDuration() {
-    return (time(NULL) - this->timeOfEntry) * 0.25;
+    return (difftime(time(NULL),this->timeOfEntry) * 0.25);
 };

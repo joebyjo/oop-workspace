@@ -6,5 +6,5 @@ Motorbike:: Motorbike(int ID) {
 };
 
 int Motorbike:: getParkingDuration() {
-    return (time(NULL) - this->timeOfEntry) * 0.15;
+    return (difftime(time(NULL),this->timeOfEntry) * 0.15);
 };
