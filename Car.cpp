@@ -1,0 +1,10 @@
+
+#include <Car.h>
+
+Car:: Car(int ID) {
+    Vehicle(ID);
+}
+
+int Car:: getParkingDuration() {
+    return (time(NULL) - this->timeOfEntry) * 0.1;
+};
