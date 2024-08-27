@@ -2,7 +2,7 @@
 #include "Bus.h"
 
 Bus:: Bus(int ID) {
-    Vehicle(ID);
+    Vehicle(this->ID);
 }
 
 int Bus:: getParkingDuration() {

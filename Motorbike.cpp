@@ -2,7 +2,7 @@
 #include "Motorbike.h"
 
 Motorbike:: Motorbike(int ID) {
-    Vehicle(ID);
+    Vehicle(this->ID);
 };
 
 int Motorbike:: getParkingDuration() {
