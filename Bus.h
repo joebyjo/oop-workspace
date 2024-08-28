@@ -5,7 +5,7 @@
 using namespace std;
 
 
-class Bus: Vehicle {
+class Bus: public Vehicle {
     public:
         Bus(int ID);
         int getParkingDuration();

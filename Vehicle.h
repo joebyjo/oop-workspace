@@ -2,6 +2,7 @@
 #define VEHICLE_H
 
 #include <ctime>
+#include <iostream>
 using namespace std;
 
 

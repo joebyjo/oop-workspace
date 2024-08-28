@@ -1,8 +1,9 @@
 
 #include "Vehicle.h"
 
+
 Vehicle:: Vehicle(int ID){
-    timeOfEntry = time(NULL);
+    timeOfEntry = time(nullptr);
     this->ID = ID;
 };
 
