@@ -11,6 +11,10 @@ Vehicle:: Vehicle(){
     Vehicle(0);
 };
 
+int Vehicle:: getParkingDuration() {
+    return difftime(time(nullptr),this->timeOfEntry);
+};
+
 int Vehicle::getID() {
     return ID;
 };

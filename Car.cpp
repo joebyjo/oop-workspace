@@ -5,5 +5,5 @@ Car:: Car(int ID): Vehicle(ID) {
 }
 
 int Car:: getParkingDuration() {
-    return (difftime(time(nullptr),this->timeOfEntry)*0.9);
+    return (Vehicle::getParkingDuration()*0.9);
 };
