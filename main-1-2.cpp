@@ -11,11 +11,12 @@ using namespace std;
 int main() {
 
     int n;
-    Car v(2);
+    ParkingLot lot(10);
+
     
-    cout << "Enter Number of cars: ";
-    cin >> n;
-    cout << v.getParkingDuration() << endl;
+    // cout << "Enter Number of cars: ";
+    // cin >> n;
+    // cout << v.getParkingDuration() << endl;
 
     
     return 0;
