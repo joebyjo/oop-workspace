@@ -35,14 +35,18 @@ void ParkingLot::unparkVehicle(int ID) {
             temp[counter] = vehicles[i];
             counter++;
         }
-        // add all of non-if to temp, free up vehicles, realloc vehicles, add elements to vehicles.
+
+
+        // add all of non-if to temp, free up vehicles, realloc vehicles, add elements to vehicles. change current_count
     }
-    delete[] vehicles;
-    vehicles = temp;
 
     if (counter == current_count) {
     cout << "Vehicle not in the lot" << endl;
     }
+
+    current_count = counter;
+    delete[] vehicles;
+    vehicles = temp;  
     
 };
 
