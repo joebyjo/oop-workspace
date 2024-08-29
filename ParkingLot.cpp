@@ -1,5 +1,5 @@
 
-#include "Parkinglot.h"
+#include "ParkingLot.h"
 
 ParkingLot:: ParkingLot(int max_capacity) {
         this->max_capacity=max_capacity;

@@ -4,7 +4,7 @@
 #include "Car.h"
 #include "Bus.h"
 #include "Motorbike.h"
-#include "Parkinglot.h"
+#include "ParkingLot.h"
 
 using namespace std;
 
