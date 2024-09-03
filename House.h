@@ -16,6 +16,7 @@ class House {
     public:
         House();
         House(int numAppliances);
+        ~House();
 
         bool addAppliance(Appliance* appliance);
 

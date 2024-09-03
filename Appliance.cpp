@@ -20,7 +20,7 @@ void Appliance:: turnOff(){
     this->isOn = false;
 };
 
-int Appliance:: getPowerConsumption(){
+double Appliance:: getPowerConsumption(){
     return 0;
 };
 

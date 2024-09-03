@@ -28,11 +28,15 @@ bool House:: addAppliance(Appliance* appliance){
 
 double House:: getTotalPowerConsumption(){
     double total = 0;
-    
+
     for (int i=0; i<current_count; i++) {
         total+= appliances[i]->getPowerConsumption();
     }
 
     return total;
 };
+
+House:: ~House() {
+    delete[] appliances;
+}
 
