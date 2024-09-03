@@ -6,7 +6,7 @@ TV:: TV(): Appliance(0) {
     this->screenSize =0;
 };
 
-TV:: TV(int powerRating, double volume): Appliance(powerRating), screenSize(screenSize) {
+TV:: TV(int powerRating, double screenSize): Appliance(powerRating), screenSize(screenSize) {
 };
 
 void TV:: setScreenSize(double screenSize) {
