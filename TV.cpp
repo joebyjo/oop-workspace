@@ -3,7 +3,7 @@
 #include "TV.h"
 
 TV:: TV(): Appliance(0) {
-    screenSize =0;
+    this->screenSize =0;
 };
 
 TV:: TV(int powerRating, double volume): Appliance(powerRating), screenSize(screenSize) {
@@ -18,5 +18,5 @@ double TV:: getScreenSize(){
 };
 
 double TV::getPowerConsumption() {
-    return powerRating * 24 * (screenSize/10);
+    return powerRating * (screenSize/10);
 };
