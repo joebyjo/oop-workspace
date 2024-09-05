@@ -27,12 +27,14 @@ void Tesla::drive(int kms) {
 
     int i =0;
     while (i<kms && batteryPercentage!=0) {
-        i++;
+        
         emissions += 74;
 
         if (i%5==0 && i!=kms) {
             batteryPercentage -= 1;
         }
+
+        i++;
         
 
     }
