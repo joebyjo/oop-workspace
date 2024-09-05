@@ -10,11 +10,14 @@ using namespace std;
 
 int main() {
 
-    Fridge f1(10, 20.0);
+    House h1(3);
+
+    h1.addAppliance(new Appliance(200));
+    h1.addAppliance(new Fridge(200,300));
+    h1.addAppliance(new TV(200,42));
 
 
-    cout << f1.get_isOn() << endl;
-    cout << f1.getPowerConsumption() << endl;
+    cout << h1.getTotalPowerConsumption() << endl;
 
 
     return 0;

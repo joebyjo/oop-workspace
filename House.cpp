@@ -37,6 +37,10 @@ double House:: getTotalPowerConsumption(){
 };
 
 House:: ~House() {
+    for (int i=0; i<current_count; i++) {
+        delete appliances[i];
+    }
+
     delete[] appliances;
 }
 
