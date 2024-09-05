@@ -25,8 +25,7 @@ void Tesla:: chargeBattery(int mins) {
 
 void Tesla::drive(int kms) {
     
-
-    for (int i=0; i<kms+1; i++) {
+    for (int i=0; i<kms; i++) {
 
         if (batteryPercentage==0) {
             return;
