@@ -36,6 +36,8 @@ void Tesla::drive(int kms) {
         
 
     }
+
+    batteryPercentage -= 0.2;
     
     // for (int i=1; i<kms; i++) {
 
