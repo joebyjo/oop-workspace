@@ -30,14 +30,15 @@ void Ford:: drive(int kms) {
 
     // emissions = kms * 234;
 
-    int i =0;
+    int i =1;
     while (i<kms && litresOfFuel!=0) {
+        i++;
         emissions += 74;
 
         if (i%5==0) {
             litresOfFuel -= 1;
         }
-        i++;
+        
 
     }
 
