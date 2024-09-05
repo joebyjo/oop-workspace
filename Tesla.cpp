@@ -26,13 +26,16 @@ void Tesla:: chargeBattery(int mins) {
 void Tesla::drive(int kms) {
 
     int i =0;
-    while (i<kms-1 && batteryPercentage!=0) {
-        i++;
-        emissions += 74;
+    while (i<kms && batteryPercentage!=0) {
 
         if (i%5==0) {
             batteryPercentage -= 1;
         }
+
+        i++;
+        emissions += 74;
+
+
         
 
     }
