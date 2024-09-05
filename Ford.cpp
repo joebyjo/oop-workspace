@@ -42,7 +42,6 @@ void Ford:: drive(int kms) {
 
     }
 
-    litresOfFuel -= 0.2;
 
 
     // for (int i=1; i<kms+1; i++) {
