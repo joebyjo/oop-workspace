@@ -15,7 +15,7 @@ Tesla:: Tesla(char model, int price): Car(price), model(model), batteryPercentag
 };
 
 void Tesla:: chargeBattery(int mins) {
-    this->batteryPercentage += (mins * 0.005);
+    this->batteryPercentage += (mins * 0.5);
 
     if (batteryPercentage>=100) {
         this->batteryPercentage = 100;
