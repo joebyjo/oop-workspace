@@ -16,7 +16,7 @@ Explosion:: Explosion(int x,int y): GameEntity(x,y,'E') {
 
 
 void Explosion:: apply(GameEntity& entity) {
-    entity.setType(NoneType);
+    this->setType(NoneType);
     entity.setPos(make_tuple(-1,-1));
 };
 
