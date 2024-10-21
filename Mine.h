@@ -16,9 +16,9 @@ Mine:: Mine(int x,int y): GameEntity(x,y,'M') {
 
 
 Explosion* Mine::explode(){ 
-    Explosion explosion(get<0>(position),get<1>(position));
-    explosion.apply(*this);
-    return &explosion;
+    Explosion* explosion = new Explosion(get<0>(position),get<1>(position));
+    explosion->apply(*this);
+    return explosion;
 };
 
 #endif
