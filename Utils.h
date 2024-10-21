@@ -12,7 +12,7 @@ using namespace std;
 class Utils {
     public:
         static tuple<int, int> generateRandomPos(int gridWidth, int gridHeight);
-        static double calculateDistance(std::tuple<int, int> pos1, std::tuple<int, int> pos2);
+        static double calculateDistance(tuple<int, int> pos1, tuple<int, int> pos2);
 
 };
 
@@ -27,7 +27,7 @@ tuple<int, int> Utils:: generateRandomPos(int gridWidth, int gridHeight) {
 };
 
 
-double Utils:: calculateDistance(std::tuple<int, int> pos1, std::tuple<int, int> pos2) {
+double Utils:: calculateDistance(tuple<int, int> pos1, tuple<int, int> pos2) {
 
     int x1 = get<0>(pos1);
     int y1 = get<1>(pos1);
