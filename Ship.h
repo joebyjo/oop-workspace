@@ -11,6 +11,7 @@ class Ship: public GameEntity {
 
 
 Ship:: Ship(int x, int y): GameEntity(x,y,'S') {
+    this->type = ShipType;
 };
 
 
