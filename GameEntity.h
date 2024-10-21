@@ -14,7 +14,7 @@ enum GameEntityType {
 
 class GameEntity {
 
-    private:
+    protected:
         tuple<int, int> position;
         GameEntityType type;
 
@@ -22,6 +22,9 @@ class GameEntity {
         GameEntity(int x, int y, char type);
         tuple<int, int> getPos();
         GameEntityType getType();
+
+        void setPos(tuple<int, int> pos);
+        void setType(GameEntityType type);
 };
 
 GameEntity:: GameEntity(int x, int y, char type) {
@@ -50,6 +53,12 @@ GameEntityType GameEntity:: getType() {
     return this->type;
 };
 
+void GameEntity:: setPos(tuple<int, int> pos) {
+    this->position =pos;
+};
+void GameEntity:: setType(GameEntityType type) {
+    this-> type = type;
+};
 
 
 #endif
