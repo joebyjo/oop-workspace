@@ -49,11 +49,22 @@ void Game:: gameLoop(int maxIterations, double mineDistanceThreshold) {
     for (int i = 0; i < maxIterations; i++) {
 
         for (int j = 0; j < entities.size(); j++){
-            GameEntity* entity = entities[j];
-            if (entity->getType()== ShipType) {
-                static_cast<Ship*>(entity)->move(1,0);
+            GameEntity* entity1 = entities[j];
+            if (entity1->getType()== ShipType) {
+                static_cast<Ship*>(entity1)->move(1,0);
 
                 // if (u.calculateDistance())
+
+                for (int k = 0; k < entities.size(); k++) { 
+                    GameEntity* entity2 = entities[k];
+                    if (entity2->getType()== MineType) {
+                        if ((u.calculateDistance(entity1->getPos(),entity2->getPos()) >= mineDistanceThreshold)) {
+                            static_cast<Mine*>(entity2)->explode();
+                        }
+                    }
+                }
+
+
             }
 
         }
