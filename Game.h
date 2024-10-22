@@ -58,7 +58,7 @@ void Game:: gameLoop(int maxIterations, double mineDistanceThreshold) {
                 for (int k = 0; k < entities.size(); k++) { 
                     GameEntity* entity2 = entities[k];
                     if (entity2->getType()== MineType) {
-                        if ((u.calculateDistance(entity1->getPos(),entity2->getPos()) >= mineDistanceThreshold)) {
+                        if ((u.calculateDistance(entity1->getPos(),entity2->getPos()) <= mineDistanceThreshold)) {
                             static_cast<Mine*>(entity2)->explode();
 
                             tuple<int, int> position = entity1->getPos();
