@@ -11,7 +11,7 @@ class Ship: public GameEntity {
 
 
 Ship:: Ship(int x, int y): GameEntity(x,y,'S') {
-    this->type = ShipType;
+    this->type = ShipType;   // does not pass tests without this, ask why
 };
 
 
