@@ -31,16 +31,16 @@ GameEntity:: GameEntity(int x, int y, char type) {
     position = make_tuple(x,y);
     switch (type) {
         case 'E':
-            type = ExplosionType;
+            this->type = ExplosionType;
             break;
         case 'M':
-            type = MineType;
+            this->type = MineType;
             break;
         case 'N':
-            type = NoneType;
+            this->type = NoneType;
             break;
         case 'S':
-            type = ShipType;
+            this->type = ShipType;
             break;
     }
 }
