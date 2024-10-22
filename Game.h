@@ -61,9 +61,9 @@ void Game:: gameLoop(int maxIterations, double mineDistanceThreshold) {
                         if ((u.calculateDistance(entity1->getPos(),entity2->getPos()) <= mineDistanceThreshold)) {
                             static_cast<Mine*>(entity2)->explode();
 
-                            tuple<int, int> position = entity1->getPos();
-                            Explosion explosion(get<0>(position),get<1>(position));
-                            explosion.apply(*entity1);
+                            // tuple<int, int> position = entity1->getPos();
+                            // Explosion explosion(get<0>(position),get<1>(position));
+                            // explosion.apply(*entity1);
                         }
                     }
                 }
