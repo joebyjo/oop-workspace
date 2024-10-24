@@ -99,6 +99,26 @@ void Game:: movePlayer(int dx, int dy) {
 
 void Game:: printGrid() {
 
+    for (int i=0; i<width; i++) {
+        for (int j=0; j< height; j++) {
+            
+            if (player->getCoordinates() == make_pair(i,j)) {
+                cout << "P" << endl;
+            } else if (goal->getCoordinates() == make_pair(i,j)) {
+                cout << "G" << endl;
+            }
+
+            for (int i = 0; i< game_grid.size(); i++) {
+                if (game_grid[i]->getCoordinates() == make_pair(i,j)) {
+                    cout << "O" << endl;
+                }
+            }
+
+        }
+
+        cout << endl;
+    }
+
 };
 
 
