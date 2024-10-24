@@ -83,6 +83,7 @@ void Game:: movePlayer(int dx, int dy) {
 
         if (goal->interact(player)) {
             game_state = WIN;
+            return;
         }
 
         for (int i = 0; i< game_grid.size(); i++) {
