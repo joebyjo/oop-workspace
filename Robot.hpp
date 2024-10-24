@@ -33,7 +33,7 @@ void Robot:: takeHit() {
 
 
 bool Robot:: move(int xOffset, int yOffset) {
-    // if (coords.first + xOffset <= width && coords.second + yOffset <= height) {
+    if ((coords.first + xOffset <= width && coords.second + yOffset <= height) && (coords.first + xOffset >= 0 && coords.second + yOffset >= 0)) {
         if (xOffset == 0) {
             coords.second += yOffset;
             return true;
@@ -41,10 +41,10 @@ bool Robot:: move(int xOffset, int yOffset) {
             coords.first += xOffset;
             return true;
         } 
-    // }
+    }
     return false;
 
-    // if (yOffset==0 )
+    // if (xOffset)
 
 }
 
