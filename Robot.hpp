@@ -2,7 +2,7 @@
 #define ROBOT_HPP
 
 #include "GridItem.hpp"
-
+#include "Helper.hpp"
 
 class Robot: public GridItem {
     private:
@@ -35,13 +35,15 @@ void Robot:: takeHit() {
 bool Robot:: move(int xOffset, int yOffset) {
     if (coords.first + xOffset <= width && coords.second + yOffset <= height) {
         if (xOffset == 0) {
-            coords.second += yOffset;
+            coords.second += abs(yOffset);
             return true;
         } else if (yOffset == 0) {
-            coords.first += xOffset;
+            coords.first += abs(xOffset);
             return true;
         } 
     }
+
+
 
     return false;
 }
