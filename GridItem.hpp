@@ -11,12 +11,11 @@ class GridItem {
         int height;
 
         // 
+        static int count;
 
     public:
         GridItem(int x, int y, int width, int height);
         GridItem();
-
-        static int count;
 
 
         void setCoordinates(int x, int y);
@@ -37,7 +36,7 @@ GridItem:: GridItem(int x, int y, int width, int height) {
     this->width = width;
     this->height = height;
 
-    this->count = this->count + 1;
+    this->GridItem:: count = this->count + 1;
 };
 
 GridItem:: GridItem(): GridItem(0,0,0,0){
@@ -61,12 +60,12 @@ int GridItem:: getGridHeight() {
 
 
 int GridItem:: getActiveGridItemCount() {
-    return this->count;
-    return 0;
+    return this->GridItem::count;
+    // return 0;
 };
 
 GridItem:: ~GridItem() {
-    this->count = this->count -1;
+    this->GridItem::count = this->GridItem::count -1;
 };
 
 
