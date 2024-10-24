@@ -99,8 +99,8 @@ void Game:: movePlayer(int dx, int dy) {
 
 void Game:: printGrid() {
 
-    for (int i=0; i<width; i++) {
-        for (int j=0; j< height; j++) {
+    for (int i=0; i<height; i++) {
+        for (int j=0; j< width; j++) {
             
             if (player->getCoordinates() == make_pair(j,i)) {
                 cout << "P";
