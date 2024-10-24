@@ -5,6 +5,7 @@
         "new": "cpp",
         "stack": "cpp",
         "tuple": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "iostream": "cpp"
     }
 }
