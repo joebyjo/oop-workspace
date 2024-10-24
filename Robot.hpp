@@ -4,7 +4,8 @@
 #include "GridItem.hpp"
 
 
-class Robot {
+class Robot: public GridItem {
+    
 
 };
 
