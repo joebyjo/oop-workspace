@@ -10,7 +10,7 @@ class GridItem {
         int width;
         int height;
 
-        static int ActiveGridItemCount;
+        static int count;
 
     public:
         GridItem(int x, int y, int width, int height);
@@ -34,7 +34,7 @@ GridItem:: GridItem(int x, int y, int width, int height) {
     this->width = width;
     this->height = height;
 
-    this->ActiveGridItemCount+=1;
+    this->count = this->count + 1;
 };
 
 GridItem:: GridItem(): GridItem(0,0,0,0){
@@ -58,11 +58,11 @@ int GridItem:: getGridHeight() {
 
 
 int GridItem:: getActiveGridItemCount() {
-    return this->ActiveGridItemCount;
+    return this->count;
 };
 
 GridItem:: ~GridItem() {
-    this->ActiveGridItemCount--;
+    this->count = this->count -1;
 };
 
 
