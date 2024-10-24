@@ -62,7 +62,7 @@ int GridItem:: getActiveGridItemCount() {
 };
 
 GridItem:: ~GridItem() {
-    ActiveGridItemCount--;
+    // ActiveGridItemCount--;
 };
 
 
