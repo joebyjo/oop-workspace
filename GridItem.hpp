@@ -12,6 +12,7 @@ class GridItem {
 
         // 
         static int count;
+        int GridItem::count = 0; 
 
     public:
         GridItem(int x, int y, int width, int height);

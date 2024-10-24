@@ -14,6 +14,7 @@ class Interactable: public GridItem {
     private:
         static int active_interactable;
         
+        
     public:
         Interactable(int x, int y, int width, int height);
         Interactable();
@@ -26,6 +27,8 @@ class Interactable: public GridItem {
 };
 
 
-Interactable(int x, int y, int width, int height);
+Interactable:: Interactable(int x, int y, int width, int height) {
+
+};
 
 #endif
