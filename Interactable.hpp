@@ -30,20 +30,20 @@ int Interactable:: active_interactable=0;
 
 
 Interactable:: Interactable(int x, int y, int width, int height): GridItem(x,y,width,height) {
-    this->active_interactable++;
+    this->Interactable:: active_interactable = this-> Interactable::active_interactable + 1;
 };
 
 Interactable::  Interactable(): GridItem(0,0,0,0) {};
 
 
 int Interactable::  getActiveInteractableCount() {
-    // return this->active_interactable;
-    getActiveGridItemCount();
+    return this->Interactable:: active_interactable;
+    // getActiveGridItemCount();
 };
 
 
 Interactable::  ~Interactable() {
-    this->active_interactable--;
+    this->Interactable:: active_interactable =  this->Interactable:: active_interactable -1;
 }
 
 #endif
