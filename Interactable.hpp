@@ -3,13 +3,15 @@
 
 #include "Robot.hpp"
 
+
 enum InteractableType {
     GOAL,
     OBSTACLE
 };
 
 
-class Interactable {
+class Interactable: public GridItem {
+    
 
 };
 
