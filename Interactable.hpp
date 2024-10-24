@@ -33,7 +33,9 @@ Interactable:: Interactable(int x, int y, int width, int height): GridItem(x,y,w
     this->Interactable:: active_interactable = this-> Interactable::active_interactable + 1;
 };
 
-Interactable::  Interactable(): GridItem(0,0,0,0) {};
+Interactable::  Interactable(): GridItem(0,0,0,0) {
+    this->Interactable:: active_interactable = this-> Interactable::active_interactable + 1;
+};
 
 
 int Interactable::  getActiveInteractableCount() {
