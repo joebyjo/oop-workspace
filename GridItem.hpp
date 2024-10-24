@@ -12,7 +12,7 @@ class GridItem {
 
         // 
         static int count;
-        int GridItem::count = 0; 
+        
 
     public:
         GridItem(int x, int y, int width, int height);
@@ -30,12 +30,15 @@ class GridItem {
 
 };
 
+int GridItem::count = 0; 
+
 GridItem:: GridItem(int x, int y, int width, int height) {
     this->coords.first = x;
     this->coords.second = y;
 
     this->width = width;
     this->height = height;
+    
 
     this->GridItem:: count = this->count + 1;
 };

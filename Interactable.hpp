@@ -28,7 +28,7 @@ class Interactable: public GridItem {
 
 
 Interactable:: Interactable(int x, int y, int width, int height) {
-
+    
 };
 
 #endif
