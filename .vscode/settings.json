@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "__split_buffer": "cpp",
+        "deque": "cpp",
+        "new": "cpp",
+        "stack": "cpp",
+        "tuple": "cpp",
+        "typeinfo": "cpp"
+    }
+}
