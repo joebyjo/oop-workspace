@@ -108,11 +108,21 @@ void Game:: printGrid() {
                 cout << "G" << endl;
             }
 
+            bool obst = false;
+
             for (int i = 0; i< game_grid.size(); i++) {
                 if (game_grid[i]->getCoordinates() == make_pair(i,j)) {
                     cout << "O" << endl;
+                    obst = true;
+                    break;
                 }
             }
+
+            if (!obst) {
+                cout << "_" << endl;
+            }
+
+
 
         }
 
