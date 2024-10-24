@@ -26,23 +26,23 @@ class Interactable: public GridItem {
 
 };
 
-int Interactable:: active_interactable =0;
+int Interactable:: active_interactable=0;
 
 
 Interactable:: Interactable(int x, int y, int width, int height): GridItem(x,y,width,height) {
-    active_interactable++;
+    this->active_interactable++;
 };
 
 Interactable::  Interactable(): GridItem(0,0,0,0) {};
 
 
 int Interactable::  getActiveInteractableCount() {
-    return this-> active_interactable;
+    return this->active_interactable;
 };
 
 
 Interactable::  ~Interactable() {
-    active_interactable--;
+    this->active_interactable--;
 }
 
 #endif
