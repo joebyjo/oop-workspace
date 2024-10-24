@@ -37,7 +37,8 @@ Interactable::  Interactable(): GridItem(0,0,0,0) {};
 
 
 int Interactable::  getActiveInteractableCount() {
-    return this->active_interactable;
+    // return this->active_interactable;
+    getActiveGridItemCount();
 };
 
 
