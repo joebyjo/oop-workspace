@@ -89,6 +89,7 @@ void Game:: movePlayer(int dx, int dy) {
         for (int i = 0; i< game_grid.size(); i++) {
             if (game_grid[i]->interact(player)) {
                 game_state = LOSE;
+                return;
             }
         }
 
