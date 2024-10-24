@@ -28,13 +28,13 @@ class GridItem {
 };
 
 GridItem:: GridItem(int x, int y, int width, int height) {
-    coords.first = x;
-    coords.second = y;
+    this->coords.first = x;
+    this->coords.second = y;
 
     this->width = width;
     this->height = height;
 
-    ActiveGridItemCount++;
+    this->ActiveGridItemCount++;
 };
 
 GridItem:: GridItem(): GridItem(0,0,0,0){
