@@ -102,14 +102,14 @@ void Game:: printGrid() {
     for (int i=0; i<width; i++) {
         for (int j=0; j< height; j++) {
             
-            if (player->getCoordinates() == make_pair(i,j)) {
+            if (player->getCoordinates() == make_pair(j,i)) {
                 cout << "P";
-            } else if (goal->getCoordinates() == make_pair(i,j)) {
+            } else if (goal->getCoordinates() == make_pair(j,i)) {
                 cout << "G";
             } else {
                 bool obst = false;
                 for (int k = 0; k<game_grid.size(); k++) {
-                    if (game_grid[k]->getCoordinates() == make_pair(i, j)) {
+                    if (game_grid[k]->getCoordinates() == make_pair(j, i)) {
                         cout << 'O';
                         obst = true;
                         break;
