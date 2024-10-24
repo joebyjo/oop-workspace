@@ -103,23 +103,23 @@ void Game:: printGrid() {
         for (int j=0; j< height; j++) {
             
             if (player->getCoordinates() == make_pair(i,j)) {
-                cout << "P" << endl;
+                cout << "P";
             } else if (goal->getCoordinates() == make_pair(i,j)) {
-                cout << "G" << endl;
+                cout << "G";
             }
 
             bool obst = false;
 
             for (int i = 0; i< game_grid.size(); i++) {
                 if (game_grid[i]->getCoordinates() == make_pair(i,j)) {
-                    cout << "O" << endl;
+                    cout << "O";
                     obst = true;
                     break;
                 }
             }
 
             if (!obst) {
-                cout << "_" << endl;
+                cout << "_";
             }
 
 
