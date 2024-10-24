@@ -34,7 +34,7 @@ GridItem:: GridItem(int x, int y, int width, int height) {
     this->width = width;
     this->height = height;
 
-    this->ActiveGridItemCount++;
+    this->ActiveGridItemCount+=1;
 };
 
 GridItem:: GridItem(): GridItem(0,0,0,0){
